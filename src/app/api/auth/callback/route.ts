@@ -9,7 +9,8 @@ export async function GET(request: NextRequest) {
   const code = searchParams.get('code');
 
   if (!code) {
-    return NextResponse.redirect(new URL('/?error=no_code', request.url));
+    const baseUrl = process.env.NEXTAUTH_URL || request.url;
+    return NextResponse.redirect(new URL('/dashboard', baseUrl));
   }
 
   try {
@@ -104,4 +105,5 @@ export async function GET(request: NextRequest) {
       new URL('/?error=auth_failed', request.url)
     );
   }
+
 }
