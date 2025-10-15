@@ -1,0 +1,48 @@
+{
+  "name": "casino-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "server": "tsx server/index.ts",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\""
+  },
+  "dependencies": {
+    "next": "15.5.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@prisma/client": "^6.17.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.19.21",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "axios": "^1.12.2",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.5",
+    "express": "^5.1.0",
+    "framer-motion": "^12.23.24",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.545.0",
+    "next-auth": "^4.24.11",
+    "prisma": "^6.17.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
+  }
+}
