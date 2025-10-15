@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
 
   if (!code) {
     const baseUrl = process.env.NEXTAUTH_URL || request.url;
-    return NextResponse.redirect(new URL('/dashboard', baseUrl));
+    return NextResponse.redirect('https://casino-production-cdf7.up.railway.app/dashboard');
   }
 
   try {
@@ -107,3 +107,4 @@ export async function GET(request: NextRequest) {
   }
 
 }
+
